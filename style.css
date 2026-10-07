@@ -1,0 +1,164 @@
+/*Adam "Adamus" Fiala 2026*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    color: white;
+    background: black;
+    font-family: fantasy, sans-serif;
+    padding: 20px 10px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+button img {
+    height: 1em; 
+    width: auto;
+    max-width: none;
+    vertical-align: middle;
+}
+
+h1 {
+    font-size: clamp(2rem, 5vw, 4.5rem);
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+#clicker {
+    max-width: 200px;
+    cursor: pointer;
+    transition: transform 0.15s ease;
+    user-select: none;
+    margin: 15px 0;
+}
+
+#clicker:hover {
+    transform: scale(1.08);
+}
+
+#clicker:active {
+    transform: scale(0.95);
+}
+
+button {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+.counters {
+    background-color: rgb(142, 174, 233);
+    margin: 15px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    max-width: 500px;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.counters > p {
+    background-color: blue;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 15px;
+    font-weight: bold;
+    word-break: break-word;
+}
+
+.button-mouse, 
+.button-auto {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+.button-mouse > button {
+    background-color: rgb(142, 174, 233);
+    font-size: 20px;
+    padding: 12px 20px;
+    border-radius: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.button-mouse > button:hover,
+.button-auto > button:hover {
+    background-color: rgb(112, 144, 203);
+}
+
+.button-auto {
+    gap: 10px;
+}
+
+.button-auto > button {
+    border-radius: 20px;
+    font-size: 16px;
+    padding: 12px 15px;
+    background-color: rgb(142, 174, 233);
+    width: 100%;
+    white-space: normal;
+    line-height: 1.3;
+}
+
+.button-auto hr,
+.button-mouse hr {
+    width: 100%;
+    border: none;
+    border-top: 2px solid rgb(142, 174, 233);
+    margin: 15px 0;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px 5px;
+    }
+
+    #clicker {
+        max-width: 150px;
+    }
+
+    .counters > p {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .button-auto > button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .button-mouse > button {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+/*Adam "Adamus" Fiala 2026*/
