@@ -1,10 +1,10 @@
-[kreditClicker.md](https://github.com/user-attachments/files/33180406/kreditClicker.md)
+[kreditClicker.md](https://github.com/user-attachments/files/33180474/kreditClicker.md)[Uploa# Kredit Clicker 
 
 **Kredit Clicker** je "clicker" hra vytvořená v [HTML/CSS/JavaScript]. Hráči klikáním získávají kredity, které mohou následně investovat do vylepšení a automatického generování kreditů.
 
 ---
 
-##  Herní prvky & Funkce
+##  Herní prvky & Funkce 🎮
 
 * **Klikání pro kredit:** Získávejte kredity za každé kliknutí.
 * **Upgrady a vylepšení:** Nakupujte vylepšení, která zvyšují počet kreditů za kliknutí.
@@ -13,8 +13,11 @@
 
 ---
 
-### Místní spuštění (Local Setup)
+## Původ projektu 📖
+*Tento projekt jsem vytvořil vlastně jen tak pro zábavu, ale i zároveň abych si procvičil tvorbu webových her pomocí JavaScriptu. Tento projekt přímo odkazuje na UPOL PřF, kde momentálně studuji. Tento projekt je hlavně pro mojí zábavu anebo případně pro studenty PřF.
+
+### Místní spuštění (Local Setup) 💻
 
 1. Klonujte tento repozitář:
    ```bash
-   git clone [https://github.com/Adamus64/Kredit-Clicker.git](https://github.com/Adamus64/Kredit-Clicker.git)ing kreditClicker.md…]()
+   git clone [https://github.com/Adamus64/Kredit-Clicker.git](https://github.com/Adamus64/Kredit-Clicker.git)ding kreditClicker.md…]()
