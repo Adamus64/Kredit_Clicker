@@ -26,10 +26,11 @@ function aktualizovatUI() {
     document.getElementById('upgradePocitadlo').innerText = "Automatické kredity: " + upgrade.toFixed(1) + "/s";
     document.getElementById('up1').innerText = "Úvod do diskrétních struktur (" + cena1.toFixed(0) + " kreditů) | +0.1/s";
     document.getElementById('up2').innerText = "Struktura počítačů (" + cena2.toFixed(0) + " kreditů) | +1/s"
-    document.getElementById('up3').innerText = "Struktura počítačů (" + cena3.toFixed(0) + " kreditů) | +8/s"
+    document.getElementById('up3').innerText = "Algoritmizace (" + cena3.toFixed(0) + " kreditů) | +8/s"
     document.getElementById('up4').innerText = "Základy programování (" + cena4.toFixed(0) + " kreditů) | +47/s"
     document.getElementById('up5').innerText = "Unixové systémy (" + cena5.toFixed(0) + " kreditů) | +260/s"
     document.getElementById('up6').innerText = "Matematické repetitorium (" + cena6.toFixed(0) + " kreditů) | +1400/s"
+    document.getElementById('up7').innerText = "Paradigma programování (" + cena7.toFixed(0) + " kreditů) | +7800/s"
     //
     document.getElementById('silaPocitadlo').innerText = "Síla kliku: " + silaKliku;
     switch(iterace){
@@ -37,7 +38,7 @@ function aktualizovatUI() {
             document.getElementById('upMys').innerHTML =  '<img src="img/mouse.png" height="20px"> Plastová myš (100 kreditů) | +1';
             break
         case 1:
-            document.getElementById('upMys').innerHTML = '<img src="img/mouse.png" height="20px"> Železná myš 500 kreditů) | +1';
+            document.getElementById('upMys').innerHTML = '<img src="img/mouse.png" height="20px"> Železná myš (500 kreditů) | +1';
             break
          case 2:
             document.getElementById('upMys').innerHTML = '<img src="img/mouse.png" height="20px"> Titánová myš (10000 kreditů) | +10';
@@ -49,10 +50,10 @@ function aktualizovatUI() {
             document.getElementById('upMys').innerHTML = '<img src="img/mouse.png" height="20px"> Smaragdová myš (1000000 kreditů) | *2';
             break
         case 5:
-            document.getElementById('upMys').innerHTML = '<img src="img/mouse.png" height="20px"> Jaderná myš (500000 kreditů) | *5';
+            document.getElementById('upMys').innerHTML = '<img src="img/mouse.png" height="20px"> Jaderná myš (5000000 kreditů) | *5';
             break
         case 6:
-            document.getElementById('upMys').innerHTML = '<img src="img/mouse.png" height="20px"> Kvantová myš (1000000 kreditů) | *1024';
+            document.getElementById('upMys').innerHTML = '<img src="img/mouse.png" height="20px"> Kvantová myš (10000000 kreditů) | *1024';
             break
         case 7:
             document.getElementById('upMys').innerHTML = '<img src="img/mouse.png" height="20px"> Už jsi dosáhnul max. úrovně!';
@@ -158,7 +159,7 @@ function up3f() {
     cinkSound.currentTime = 0;
     if (pocet >= cena3) {
         cinkSound.play();
-        pocet = pocet - cena2;
+        pocet = pocet - cena3;
         upgrade = upgrade + 8;
         cena3 = cena3 * 1.15;
         
@@ -228,7 +229,7 @@ function up6f() {
 function up7f() {
     cinkSound.pause();
     cinkSound.currentTime = 0;
-    if (pocet >= cena6) {
+    if (pocet >= cena7) {
         cinkSound.play();
         pocet = pocet - cena7;
         upgrade = upgrade + 7800;
@@ -351,7 +352,7 @@ function mouseUpgrade () {
     } }
 
 function resetovat (){
-    if(confirm("Opravdu chcete resetovat svůj proces? Tento krok je nevratný."))
+    if(confirm("Opravdu chcete resetovat svůj postup? Tento krok je nevratný."))
     {
     localStorage.clear();
     
