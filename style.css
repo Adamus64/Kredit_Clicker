@@ -161,4 +161,29 @@ button:active {
         padding: 10px;
     }
 }
+
+footer {
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(34, 6, 118);
+    color: white;
+    font-size: 1em;
+    font-weight: 800;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: blue;
+}
+
+#mezera {
+    padding: 1em;
+}
+
 /*Adam "Adamus" Fiala 2026*/

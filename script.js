@@ -30,7 +30,7 @@ function aktualizovatUI() {
     document.getElementById('up4').innerText = "Základy programování (" + cena4.toFixed(0) + " kreditů) | +47/s"
     document.getElementById('up5').innerText = "Unixové systémy (" + cena5.toFixed(0) + " kreditů) | +260/s"
     document.getElementById('up6').innerText = "Matematické repetitorium (" + cena6.toFixed(0) + " kreditů) | +1400/s"
-    document.getElementById('up7').innerText = "Paradigma programování (" + cena7.toFixed(0) + " kreditů) | +7800/s"
+    document.getElementById('up7').innerText = "Paradigma programování (" + cena7.toFixed(0) + " kreditů) | +7800/s" //
     //
     document.getElementById('silaPocitadlo').innerText = "Síla kliku: " + silaKliku;
     switch(iterace){
