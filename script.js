@@ -251,6 +251,7 @@ function mouseUpgrade () {
             if (pocet >= 100){
                 silaKliku = silaKliku + 1
                 iterace++
+                cena = cena - 100;
                 aktualizovatUI();
                 ulozitHru();
             }
@@ -265,6 +266,7 @@ function mouseUpgrade () {
             if (pocet >= 500){
                 silaKliku = silaKliku + 1
                 iterace++
+                cena = cena - 500
                 aktualizovatUI();
                 ulozitHru();
             }
@@ -279,6 +281,7 @@ function mouseUpgrade () {
             if (pocet >= 10000){
                 silaKliku = silaKliku + 10
                 iterace++
+                cena = cena - 10000;
                 aktualizovatUI()
                 ulozitHru()
             }
@@ -293,6 +296,7 @@ function mouseUpgrade () {
             if (pocet >= 100000){
                 silaKliku = silaKliku + 100
                 iterace++
+                cena = cena - 100000
                 aktualizovatUI()
                 ulozitHru()
             }
@@ -307,6 +311,7 @@ function mouseUpgrade () {
             if (pocet >= 1000000){
                 silaKliku = silaKliku * 2
                 iterace++
+                cena = cena - 1000000
                 aktualizovatUI()
                 ulozitHru()
             }
@@ -321,6 +326,7 @@ function mouseUpgrade () {
             if (pocet >= 5000000){
                 silaKliku = silaKliku * 5
                 iterace++
+                cena = cena - 5000000
                 aktualizovatUI()
                 ulozitHru()
             }
@@ -335,6 +341,7 @@ function mouseUpgrade () {
             if (pocet>=10000000){
                 silaKliku = silaKliku * 1024
                 iterace++
+                cena = cena - 10000000
                 aktualizovatUI()
                 ulozitHru()
             }
